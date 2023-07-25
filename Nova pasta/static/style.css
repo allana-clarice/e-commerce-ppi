@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* Reset de estilos para garantir uma base consistente */
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 15;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dcb383;
+}
+
+div{
+    padding: 10px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #0c0c0c;
+    color: #f5962a;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    background-color: #0c0c0c;
+    color: #f5962a;
+    text-align: center;
+    padding: 60px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para o conteúdo da página */
+main {
+    padding: 165px;
+    text-align: center; 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 165;
+    height: 200px;
+    columns: row-reverse;
+}
+
+
+.destaque {
+    margin-bottom: 30px;
+}
+
+.destaque h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destaque-produtos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.produto p {
+    margin-bottom: 5px;
+    text-align: center; 
+}
+
+.produto span {
+    font-weight: bold;
+}
+
+.produto button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color:  #f5962a;;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color:  #f5962a;;
+}
+
+#produtos{
+    
+}
+
+

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}E-commerce de Camisa de Time{% endblock %}</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>E-commerce ESKING</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'produtos_listar' %}">Produtos</a></li>
+            </ul>
+            <div>
+                <input type="text" placeholder="Procure aqui!" name="busca" />
+                <button class="enviar" type="submit" class="btn btn-danger">Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <main>
+        {% block center %}
+
+        {% endblock %}
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© {% now "Y" %} E-commerce de Camisa de Time. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

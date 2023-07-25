@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block center %}
+
+<h2>Seja Bem-vindo aos produtos</h2>
+
+<body>
+  <div class="container">
+<div class="row">
+     {% for produto in produtos %} 
+          <div class="col-md-4">
+
+             <h4>{{ produtos.nome }}</h4>
+             <div> 
+             <img src="{{ produtos.imagem.url }}" alt="Imagem" width="300px">
+             </div>
+           <button type="submit">  <a href="{% url 'detalhe_produto' id=produto.id %}" class="btn btn-primary btn-sm">Comprar</a></button>
+             
+
+          </div>
+      {% endfor %}
+</div>
+</div>
+    
+    </body>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block center %}
+
+<h2>Produtos Disponíveis</h2>
+         <div class="product">
+                 <img src="{{ produtos.imagem.url }}" alt="Imagem" width="300px" alt="{{ produto.nome }} - {{ produto.marca }}">
+                 <h3>{{ produtos.nome }}</h3>
+                 <p>Marca: {{ produtos.marca }}</p>
+                 <p>Descrição: {{ produtos.descricao }}</p>
+                 <p>Preço: R$ {{ produtos.preco }}</p>
+             </a>
+         </div>
+         <button type="submit"> <a href="{% url 'produtos_listar' %}" class="btn btn-primary btn-sm">Voltar</a></button>
+ </div>
+
+{% endblock %}
